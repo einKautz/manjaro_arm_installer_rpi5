@@ -153,7 +153,7 @@ jobs:
       - name: Scan for secrets
         run: |
           echo "Scanning for potential secrets..."
-          # Check for common secret patterns, but nly flag actual hardcoded secrets (base64-like strings, hex patterns, etc.)
+          # Check for common secret patterns, but only flag actual hardcoded secrets (base64-like strings, hex patterns, etc.)
           if grep -r -E "(password|secret|token|api_key)\s*=\s*['\"]([A-Za-z0-9+/=]{32,}|[a-f0-9]{32,})['\"]" --include="*.sh" --include="*.json" .; then
             echo "⚠ Warning: Potential secrets found in code"
             exit 1
