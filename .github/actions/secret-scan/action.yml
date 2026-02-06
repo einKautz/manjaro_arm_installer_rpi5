@@ -1,0 +1,16 @@
+name: Secret Scan
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        export PATTERN="${{ inputs.pattern }}"
+        export IGNORE_FILE="${{ inputs.ignore-file }}"
+        scripts/scan_secrets.sh
+
+inputs:
+  pattern:
+    required: false
+  ignore-file:
+    required: false
+    default: .secret-scan-ignore

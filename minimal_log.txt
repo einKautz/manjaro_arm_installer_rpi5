@@ -1,0 +1,748 @@
+==> Installing packages for minimal on rpi5...
+[2026-02-02 00:10:13] [INFO] Installing profile packages into rootfs
+░ Spawning container root on /tmp/manjaro-installer/root.
+░ Press Ctrl-] three times within 1s to kill container; two times followed by r
+░ to reboot container; two times followed by p to poweroff container.
+:: Synchronizing package databases...
+ core                  271.7 KiB   522 KiB/s 00:01 [###############] 100%
+ extra                   9.9 MiB  6.83 MiB/s 00:01 [###############] 100%
+ community              29.0   B  73.0   B/s 00:00 [###############] 100%
+:: Some packages should be upgraded first...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) archlinuxarm-keyring-20240419-1
+
+Total Download Size:    0.00 MiB
+Total Installed Size:   0.00 MiB
+Net Upgrade Size:      -0.01 MiB
+
+:: Proceed with installation? [Y/n]
+:: Retrieving packages...
+ archlinuxarm-key...     4.9 KiB   148 KiB/s 00:00 [###############] 100%
+(1/1) checking keys in keyring                     [###############] 100%
+(1/1) checking package integrity                   [###############] 100%
+(1/1) loading package files                        [###############] 100%
+(1/1) checking for file conflicts                  [###############] 100%
+(1/1) checking available disk space                [###############] 100%
+:: Processing package changes...
+(1/1) upgrading archlinuxarm-keyring               [###############] 100%
+gpg: Warning: using insecure memory!
+==> Appending keys from archlinuxarm.gpg...
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+==> Locally signing trusted keys in keyring...
+  -> Locally signed 1 keys.
+==> Importing owner trust values...
+gpg: Warning: using insecure memory!
+gpg: setting ownertrust to 4
+==> Updating trust database...
+gpg: Warning: using insecure memory!
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:  23  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: depth: 1  valid:  23  signed:   1  trust: 0-, 0q, 0n, 23m, 0f, 0u
+gpg: next trustdb check due at 2026-08-21
+
+:: Starting full system upgrade...
+resolving dependencies...
+:: There are 2 providers available for libxtables.so=12-64:
+:: Repository core
+   1) iptables  2) iptables-nft
+
+Enter a number (default=1):
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: systemd-libs will be installed before its libcap dependency
+
+Packages (138) archlinux-keyring-20250807.1-1  audit-4.0.5-1
+               bash-5.3.3-2  brotli-1.1.0-3  bzip2-1.0.8-6
+               ca-certificates-20240618-1
+               ca-certificates-mozilla-3.115-1
+               ca-certificates-utils-20240618-1  coreutils-9.7-1
+               cryptsetup-2.8.0-1  curl-8.15.0-1  db5.3-5.3.28-5
+               dbus-1.16.2-1  dbus-broker-37-2  dbus-broker-units-37-2
+               dbus-units-37-2  device-mapper-2.03.34-1
+               e2fsprogs-1.47.3-1  expat-2.7.1-1  file-5.46-5
+               filesystem-2024.04.07-1  findutils-4.10.0-3  gawk-5.3.2-1
+               gcc-libs-14.2.1+r753+g1cd744a6828f-1  gdbm-1.25-1
+               gdk-pixbuf2-2.42.12-2  gettext-0.26-1  glib2-2.84.4-2
+               glibc-2.41+r6+gcf88351b685d-1  gmp-6.3.0-2
+               gnulib-l10n-20241231-1  gnupg-2.4.8-1  gnutls-3.8.10-1
+               gpgme-2.0.0-1  grep-3.12-2  gzip-1.14-2  hwdata-0.398-1
+               iana-etc-20250612-1  icu-76.1-1  iproute2-6.16.0-2
+               iptables-1:1.8.11-2  iputils-20250605-1  jbigkit-2.1-8
+               json-c-0.18-2  kbd-2.8.0-1  keyutils-1.6.3-3  kmod-34.2-1
+               krb5-1.21.3-2  leancrypto-1.5.1-1  libarchive-3.8.1-1
+               libassuan-3.0.0-1  libbpf-1.5.1-1  libcap-2.76-1
+               libcap-ng-0.8.5-3  libelf-0.193-5  libffi-3.5.1-1
+               libgcrypt-1.11.2-1  libgpg-error-1.55-1
+               libjpeg-turbo-3.1.1-1  libksba-1.6.7-2  libldap-2.6.10-2
+               libmnl-1.0.5-2  libnetfilter_conntrack-1.0.9-2
+               libnfnetlink-1.0.2-2  libnftnl-1.3.0-1
+               libnghttp2-1.66.0-1  libnghttp3-1.11.0-1  libnl-3.11.0-1
+               libnotify-0.8.6-1  libp11-kit-0.25.5-1  libpcap-1.10.5-3
+               libpng-1.6.50-1  libpsl-0.21.5-2  libsasl-2.1.28-5
+               libseccomp-2.5.6-1  libsecret-0.21.7-1  libssh2-1.11.1-1
+               libsysprof-capture-48.0-7  libtasn1-4.20.0-1
+               libtiff-4.7.0-1  libtirpc-1.3.6-2  libunistring-1.3-1
+               libusb-1.0.29-1  libverto-0.3.2-5  libxcrypt-4.4.38-1
+               libxml2-2.14.5-1  licenses-20240728-1
+               linux-api-headers-6.16-1  lmdb-0.9.33-1
+               lsb-release-1.4-13  lz4-1:1.10.0-2  mpdecimal-4.0.1-1
+               mpfr-4.2.2-1  ncurses-6.5-4  nettle-3.10.2-1  npth-1.8-1
+               openssl-3.5.2-1  p11-kit-0.25.5-1
+               pacman-7.0.0.r10.ga2d0293-4  pacman-mirrors-5.2-1
+               pam-1.7.1-1  pambase-20250719-1  pciutils-3.14.0-1
+               pcre2-10.45-1  perl-5.42.0-1  pinentry-1.3.2-1
+               popt-1.19-2  procps-ng-4.0.5-3  psmisc-23.7-1
+               python-3.13.7-1  python-charset-normalizer-3.4.3-1
+               python-gpgme-2.0.0-1.1  python-idna-3.10-2
+               python-npyscreen-4.10.5-10  python-pytz-2025.2-1
+               python-requests-2.32.4-1  python-urllib3-2.5.0-1
+               readline-8.3.001-1  sed-4.9-3  shadow-4.18.0-1
+               shared-mime-info-2.4-2  sqlite-3.50.4-1
+               systemd-sysvcompat-257.8-2  tar-1.35-2  tpm2-tss-4.1.3-1
+               tzdata-2025b-1  uboot-tools-2023.01-1
+               util-linux-2.41.1-1  util-linux-libs-2.41.1-1  xz-5.8.1-1
+               zlib-1:1.3.1-2  zstd-1.5.7-2  base-3-2
+               manjaro-release-24.04-1  manjaro-system-20230303-1
+               sudo-1.9.17.p1-1  systemd-257.8-2  systemd-libs-257.8-2
+
+Total Download Size:   158.77 MiB
+Total Installed Size:  821.43 MiB
+Net Upgrade Size:      291.57 MiB
+
+:: Proceed with installation? [Y/n]
+:: Retrieving packages...
+ icu-76.1-1-aarch64     10.0 MiB  10.8 MiB/s 00:01 [###############] 100%
+ glibc-2.41+r6+gc...     9.0 MiB  9.60 MiB/s 00:01 [###############] 100%
+ perl-5.42.0-1-aa...    15.3 MiB  13.3 MiB/s 00:01 [###############] 100%
+ python-3.13.7-1-...    11.9 MiB  7.86 MiB/s 00:02 [###############] 100%
+ openssl-3.5.2-1-...     5.5 MiB  10.3 MiB/s 00:01 [###############] 100%
+ gcc-libs-14.2.1+...    31.2 MiB  19.6 MiB/s 00:02 [###############] 100%
+ systemd-257.8-2-...     7.8 MiB  12.1 MiB/s 00:01 [###############] 100%
+ util-linux-2.41....     5.2 MiB  9.51 MiB/s 00:01 [###############] 100%
+ gnupg-2.4.8-1-aa...     2.6 MiB  5.70 MiB/s 00:00 [###############] 100%
+ gettext-0.26-1-a...     2.8 MiB  5.74 MiB/s 00:00 [###############] 100%
+ coreutils-9.7-1-...     2.6 MiB  6.49 MiB/s 00:00 [###############] 100%
+ bash-5.3.3-2-aarch64 1786.2 KiB  6.71 MiB/s 00:00 [###############] 100%
+ glib2-2.84.4-2-a...     4.7 MiB  6.59 MiB/s 00:01 [###############] 100%
+ sudo-1.9.17.p1-1...  1742.4 KiB  5.95 MiB/s 00:00 [###############] 100%
+ hwdata-0.398-1-any   1605.6 KiB  5.17 MiB/s 00:00 [###############] 100%
+ sqlite-3.50.4-1-...  1725.7 KiB  5.38 MiB/s 00:00 [###############] 100%
+ gnutls-3.8.10-1-...  1670.7 KiB  5.21 MiB/s 00:00 [###############] 100%
+ gawk-5.3.2-1-aarch64 1379.0 KiB  7.65 MiB/s 00:00 [###############] 100%
+ ncurses-6.5-4-aa...  1341.2 KiB  6.15 MiB/s 00:00 [###############] 100%
+ leancrypto-1.5.1...  1248.1 KiB  5.89 MiB/s 00:00 [###############] 100%
+ kbd-2.8.0-1-aarch64  1240.1 KiB  5.50 MiB/s 00:00 [###############] 100%
+ linux-api-header...  1252.2 KiB  4.32 MiB/s 00:00 [###############] 100%
+ krb5-1.21.3-2-aa...  1238.2 KiB  7.37 MiB/s 00:00 [###############] 100%
+ shadow-4.18.0-1-...  1224.0 KiB  3.93 MiB/s 00:00 [###############] 100%
+ archlinux-keyrin...  1221.1 KiB  3.68 MiB/s 00:00 [###############] 100%
+ pacman-7.0.0.r10...  1190.9 KiB  3.29 MiB/s 00:00 [###############] 100%
+ pcre2-10.45-1-aa...  1187.6 KiB  3.71 MiB/s 00:00 [###############] 100%
+ e2fsprogs-1.47.3...  1171.7 KiB  3.61 MiB/s 00:00 [###############] 100%
+ curl-8.15.0-1-aa...  1169.3 KiB  7.01 MiB/s 00:00 [###############] 100%
+ systemd-libs-257...  1099.1 KiB  7.16 MiB/s 00:00 [###############] 100%
+ iproute2-6.16.0-...  1062.4 KiB  6.92 MiB/s 00:00 [###############] 100%
+ db5.3-5.3.28-5-a...  1048.8 KiB  6.02 MiB/s 00:00 [###############] 100%
+ procps-ng-4.0.5-...   858.2 KiB  6.45 MiB/s 00:00 [###############] 100%
+ tpm2-tss-4.1.3-1...   835.0 KiB  4.38 MiB/s 00:00 [###############] 100%
+ xz-5.8.1-1-aarch64    786.5 KiB  2.78 MiB/s 00:00 [###############] 100%
+ cryptsetup-2.8.0...   748.6 KiB  2.31 MiB/s 00:00 [###############] 100%
+ tar-1.35-2-aarch64    726.3 KiB  2.51 MiB/s 00:00 [###############] 100%
+ libxml2-2.14.5-1...   695.4 KiB  3.23 MiB/s 00:00 [###############] 100%
+ libcap-2.76-1-aa...   660.4 KiB  4.85 MiB/s 00:00 [###############] 100%
+ libgcrypt-1.11.2...   576.9 KiB  5.63 MiB/s 00:00 [###############] 100%
+ pam-1.7.1-1-aarch64   575.2 KiB  3.82 MiB/s 00:00 [###############] 100%
+ libunistring-1.3...   568.4 KiB  2.92 MiB/s 00:00 [###############] 100%
+ shared-mime-info...   555.2 KiB  2.96 MiB/s 00:00 [###############] 100%
+ libelf-0.193-5-a...   502.9 KiB  2.08 MiB/s 00:00 [###############] 100%
+ libarchive-3.8.1...   502.0 KiB  2.08 MiB/s 00:00 [###############] 100%
+ util-linux-libs-...   481.5 KiB  2.83 MiB/s 00:00 [###############] 100%
+ gdk-pixbuf2-2.42...   459.3 KiB  4.19 MiB/s 00:00 [###############] 100%
+ findutils-4.10.0...   456.6 KiB  2.03 MiB/s 00:00 [###############] 100%
+ nettle-3.10.2-1-...   448.5 KiB  1745 KiB/s 00:00 [###############] 100%
+ libtiff-4.7.0-1-...   446.3 KiB  1883 KiB/s 00:00 [###############] 100%
+ libjpeg-turbo-3....   436.7 KiB  2.00 MiB/s 00:00 [###############] 100%
+ zstd-1.5.7-2-aarch64  431.0 KiB  2.94 MiB/s 00:00 [###############] 100%
+ iptables-1:1.8.1...   409.1 KiB  2.31 MiB/s 00:00 [###############] 100%
+ file-5.46-5-aarch64   406.2 KiB  2.06 MiB/s 00:00 [###############] 100%
+ readline-8.3.001...   392.7 KiB  2.26 MiB/s 00:00 [###############] 100%
+ ca-certificates-...   384.6 KiB  2.39 MiB/s 00:00 [###############] 100%
+ mpfr-4.2.2-1-aarch64  383.4 KiB  2.12 MiB/s 00:00 [###############] 100%
+ iana-etc-2025061...   383.1 KiB  2.30 MiB/s 00:00 [###############] 100%
+ audit-4.0.5-1-aa...   383.1 KiB  2.04 MiB/s 00:00 [###############] 100%
+ libnl-3.11.0-1-a...   378.8 KiB  2.13 MiB/s 00:00 [###############] 100%
+ gmp-6.3.0-2-aarch64   369.7 KiB  2.41 MiB/s 00:00 [###############] 100%
+ libp11-kit-0.25....   363.6 KiB  3.11 MiB/s 00:00 [###############] 100%
+ brotli-1.1.0-3-a...   341.1 KiB  3.83 MiB/s 00:00 [###############] 100%
+ tzdata-2025b-1-a...   329.9 KiB  3.88 MiB/s 00:00 [###############] 100%
+ uboot-tools-2023...   312.8 KiB  2.09 MiB/s 00:00 [###############] 100%
+ gpgme-2.0.0-1-aa...   298.9 KiB  2047 KiB/s 00:00 [###############] 100%
+ python-npyscreen...   294.3 KiB  2016 KiB/s 00:00 [###############] 100%
+ dbus-1.16.2-1-aa...   294.1 KiB  1960 KiB/s 00:00 [###############] 100%
+ libpcap-1.10.5-3...   272.6 KiB  1632 KiB/s 00:00 [###############] 100%
+ libldap-2.6.10-2...   262.5 KiB  1672 KiB/s 00:00 [###############] 100%
+ device-mapper-2....   252.9 KiB  1806 KiB/s 00:00 [###############] 100%
+ psmisc-23.7-1-aa...   251.3 KiB  1933 KiB/s 00:00 [###############] 100%
+ libgpg-error-1.5...   243.5 KiB  1703 KiB/s 00:00 [###############] 100%
+ gdbm-1.25-1-aarch64   241.9 KiB  2.54 MiB/s 00:00 [###############] 100%
+ libssh2-1.11.1-1...   237.3 KiB  3.18 MiB/s 00:00 [###############] 100%
+ libbpf-1.5.1-1-a...   236.5 KiB  2.75 MiB/s 00:00 [###############] 100%
+ libpng-1.6.50-1-...   233.5 KiB  2.28 MiB/s 00:00 [###############] 100%
+ python-urllib3-2...   221.9 KiB  2.49 MiB/s 00:00 [###############] 100%
+ grep-3.12-2-aarch64   220.3 KiB  2.31 MiB/s 00:00 [###############] 100%
+ p11-kit-0.25.5-1...   214.2 KiB  2.61 MiB/s 00:00 [###############] 100%
+ python-gpgme-2.0...   212.8 KiB  2.42 MiB/s 00:00 [###############] 100%
+ pacman-mirrors-5...   199.0 KiB  2.07 MiB/s 00:00 [###############] 100%
+ sed-4.9-3-aarch64     198.9 KiB  2.66 MiB/s 00:00 [###############] 100%
+ libsecret-0.21.7...   171.9 KiB  2.18 MiB/s 00:00 [###############] 100%
+ libtirpc-1.3.6-2...   169.3 KiB  1499 KiB/s 00:00 [###############] 100%
+ pinentry-1.3.2-1...   160.4 KiB  1337 KiB/s 00:00 [###############] 100%
+ python-charset-n...   151.9 KiB  1688 KiB/s 00:00 [###############] 100%
+ libsasl-2.1.28-5...   136.7 KiB  1709 KiB/s 00:00 [###############] 100%
+ dbus-broker-37-2...   135.1 KiB  1755 KiB/s 00:00 [###############] 100%
+ pciutils-3.14.0-...   131.5 KiB  1461 KiB/s 00:00 [###############] 100%
+ iputils-20250605...   130.1 KiB  1183 KiB/s 00:00 [###############] 100%
+ libtasn1-4.20.0-...   129.6 KiB  1440 KiB/s 00:00 [###############] 100%
+ libksba-1.6.7-2-...   129.3 KiB  1486 KiB/s 00:00 [###############] 100%
+ lz4-1:1.10.0-2-a...   125.7 KiB   989 KiB/s 00:00 [###############] 100%
+ python-requests-...   114.6 KiB   955 KiB/s 00:00 [###############] 100%
+ kmod-34.2-1-aarch64   114.4 KiB   901 KiB/s 00:00 [###############] 100%
+ libassuan-3.0.0-...   109.0 KiB   991 KiB/s 00:00 [###############] 100%
+ gnulib-l10n-2024...   106.9 KiB  1337 KiB/s 00:00 [###############] 100%
+ expat-2.7.1-1-aa...   103.1 KiB   973 KiB/s 00:00 [###############] 100%
+ licenses-2024072...   102.3 KiB  1065 KiB/s 00:00 [###############] 100%
+ keyutils-1.6.3-3...   100.5 KiB   688 KiB/s 00:00 [###############] 100%
+ libnghttp2-1.66....    92.2 KiB   816 KiB/s 00:00 [###############] 100%
+ mpdecimal-4.0.1-...    91.9 KiB   835 KiB/s 00:00 [###############] 100%
+ libxcrypt-4.4.38...    85.4 KiB   695 KiB/s 00:00 [###############] 100%
+ lmdb-0.9.33-1-aa...    84.5 KiB   880 KiB/s 00:00 [###############] 100%
+ libseccomp-2.5.6...    83.4 KiB   642 KiB/s 00:00 [###############] 100%
+ libpsl-0.21.5-2-...    82.9 KiB   436 KiB/s 00:00 [###############] 100%
+ zlib-1:1.3.1-2-a...    81.7 KiB   907 KiB/s 00:00 [###############] 100%
+ gzip-1.14-2-aarch64    80.9 KiB   898 KiB/s 00:00 [###############] 100%
+ python-idna-3.10...    79.3 KiB   770 KiB/s 00:00 [###############] 100%
+ libnghttp3-1.11....    73.7 KiB   793 KiB/s 00:00 [###############] 100%
+ libusb-1.0.29-1-...    70.4 KiB   640 KiB/s 00:00 [###############] 100%
+ popt-1.19-2-aarch64    68.3 KiB   759 KiB/s 00:00 [###############] 100%
+ libnftnl-1.3.0-1...    62.3 KiB   890 KiB/s 00:00 [###############] 100%
+ json-c-0.18-2-aa...    55.3 KiB   969 KiB/s 00:00 [###############] 100%
+ bzip2-1.0.8-6-aa...    54.9 KiB   713 KiB/s 00:00 [###############] 100%
+ jbigkit-2.1-8-aa...    47.7 KiB   596 KiB/s 00:00 [###############] 100%
+ libsysprof-captu...    46.8 KiB   538 KiB/s 00:00 [###############] 100%
+ python-pytz-2025...    44.0 KiB   428 KiB/s 00:00 [###############] 100%
+ libnetfilter_con...    43.1 KiB   444 KiB/s 00:00 [###############] 100%
+ libffi-3.5.1-1-a...    42.4 KiB   530 KiB/s 00:00 [###############] 100%
+ libcap-ng-0.8.5-...    40.9 KiB   470 KiB/s 00:00 [###############] 100%
+ libnotify-0.8.6-...    32.8 KiB   432 KiB/s 00:00 [###############] 100%
+ npth-1.8-1-aarch64     26.7 KiB   361 KiB/s 00:00 [###############] 100%
+ libverto-0.3.2-5...    17.5 KiB   237 KiB/s 00:00 [###############] 100%
+ filesystem-2024....    16.4 KiB   213 KiB/s 00:00 [###############] 100%
+ libnfnetlink-1.0...    15.6 KiB   237 KiB/s 00:00 [###############] 100%
+ manjaro-release-...    14.3 KiB   250 KiB/s 00:00 [###############] 100%
+ ca-certificates-...    10.6 KiB   159 KiB/s 00:00 [###############] 100%
+ libmnl-1.0.5-2-a...    10.4 KiB   155 KiB/s 00:00 [###############] 100%
+ manjaro-system-2...     9.5 KiB   166 KiB/s 00:00 [###############] 100%
+ lsb-release-1.4-...     7.6 KiB   109 KiB/s 00:00 [###############] 100%
+ systemd-sysvcomp...     6.1 KiB  72.7 KiB/s 00:00 [###############] 100%
+ pambase-20250719...     3.2 KiB  56.1 KiB/s 00:00 [###############] 100%
+ dbus-broker-unit...     2.5 KiB  27.3 KiB/s 00:00 [###############] 100%
+ base-3-2-any            2.3 KiB  26.6 KiB/s 00:00 [###############] 100%
+ dbus-units-37-2-...     2.2 KiB  27.5 KiB/s 00:00 [###############] 100%
+ ca-certificates-...     2.1 KiB  47.8 KiB/s 00:00 [###############] 100%
+ Total (138/138)       158.8 MiB  19.5 MiB/s 00:08 [###############] 100%
+(138/138) checking keys in keyring                 [###############] 100%
+(138/138) checking package integrity               [###############] 100%
+(138/138) loading package files                    [###############] 100%
+(138/138) checking for file conflicts              [###############] 100%
+(138/138) checking available disk space            [###############] 100%
+:: Processing package changes...
+(  1/138) upgrading iana-etc                       [###############] 100%
+(  2/138) upgrading filesystem                     [###############] 100%
+(  3/138) upgrading linux-api-headers              [###############] 100%
+(  4/138) upgrading tzdata                         [###############] 100%
+(  5/138) upgrading glibc                          [###############] 100%
+Generating locales...
+Generation complete.
+(  6/138) upgrading gcc-libs                       [###############] 100%
+(  7/138) upgrading ncurses                        [###############] 100%
+(  8/138) upgrading readline                       [###############] 100%
+(  9/138) upgrading bash                           [###############] 100%
+( 10/138) upgrading gmp                            [###############] 100%
+( 11/138) upgrading zlib                           [###############] 100%
+( 12/138) upgrading sqlite                         [###############] 100%
+( 13/138) upgrading util-linux-libs                [###############] 100%
+( 14/138) upgrading e2fsprogs                      [###############] 100%
+( 15/138) upgrading keyutils                       [###############] 100%
+( 16/138) upgrading gdbm                           [###############] 100%
+( 17/138) upgrading openssl                        [###############] 100%
+( 18/138) upgrading libsasl                        [###############] 100%
+( 19/138) upgrading libldap                        [###############] 100%
+( 20/138) upgrading libverto                       [###############] 100%
+( 21/138) installing lmdb                          [###############] 100%
+( 22/138) upgrading krb5                           [###############] 100%
+( 23/138) upgrading libcap-ng                      [###############] 100%
+( 24/138) upgrading audit                          [###############] 100%
+( 25/138) upgrading libxcrypt                      [###############] 100%
+( 26/138) upgrading libtirpc                       [###############] 100%
+( 27/138) upgrading pambase                        [###############] 100%
+( 28/138) upgrading libgpg-error                   [###############] 100%
+( 29/138) upgrading libgcrypt                      [###############] 100%
+( 30/138) upgrading lz4                            [###############] 100%
+( 31/138) upgrading xz                             [###############] 100%
+( 32/138) upgrading zstd                           [###############] 100%
+( 33/138) upgrading systemd-libs                   [###############] 100%
+( 34/138) upgrading pam                            [###############] 100%
+( 35/138) upgrading libcap                         [###############] 100%
+( 36/138) upgrading coreutils                      [###############] 100%
+( 37/138) upgrading bzip2                          [###############] 100%
+( 38/138) installing libseccomp                    [###############] 100%
+( 39/138) installing file                          [###############] 100%
+( 40/138) upgrading findutils                      [###############] 100%
+( 41/138) upgrading mpfr                           [###############] 100%
+( 42/138) upgrading gawk                           [###############] 100%
+( 43/138) upgrading pcre2                          [###############] 100%
+New optional dependencies for pcre2
+    sh: for pcre2-config [installed]
+( 44/138) upgrading grep                           [###############] 100%
+( 45/138) installing procps-ng                     [###############] 100%
+( 46/138) installing sed                           [###############] 100%
+( 47/138) installing tar                           [###############] 100%
+( 48/138) installing gnulib-l10n                   [###############] 100%
+( 49/138) upgrading libunistring                   [###############] 100%
+( 50/138) upgrading icu                            [###############] 100%
+( 51/138) upgrading libxml2                        [###############] 100%
+( 52/138) upgrading gettext                        [###############] 100%
+New optional dependencies for gettext
+    appstream: for appstream support
+( 53/138) installing hwdata                        [###############] 100%
+( 54/138) installing kmod                          [###############] 100%
+( 55/138) installing pciutils                      [###############] 100%
+Optional dependencies for pciutils
+    which: for update-pciids
+    grep: for update-pciids [installed]
+    curl: for update-pciids [installed]
+( 56/138) installing psmisc                        [###############] 100%
+( 57/138) installing shadow                        [###############] 100%
+( 58/138) installing util-linux                    [###############] 100%
+Optional dependencies for util-linux
+    words: default dictionary for look
+( 59/138) installing gzip                          [###############] 100%
+Optional dependencies for gzip
+    less: zless support
+    util-linux: zmore support [installed]
+    diffutils: zdiff/zcmp support
+( 60/138) installing licenses                      [###############] 100%
+( 61/138) upgrading libtasn1                       [###############] 100%
+( 62/138) upgrading libffi                         [###############] 100%
+( 63/138) upgrading libp11-kit                     [###############] 100%
+( 64/138) upgrading p11-kit                        [###############] 100%
+( 65/138) upgrading ca-certificates-utils          [###############] 100%
+( 66/138) upgrading ca-certificates-mozilla        [###############] 100%
+( 67/138) upgrading ca-certificates                [###############] 100%
+( 68/138) upgrading brotli                         [###############] 100%
+( 69/138) upgrading libnghttp2                     [###############] 100%
+( 70/138) upgrading libnghttp3                     [###############] 100%
+( 71/138) upgrading libpsl                         [###############] 100%
+( 72/138) upgrading libssh2                        [###############] 100%
+( 73/138) upgrading curl                           [###############] 100%
+( 74/138) upgrading nettle                         [###############] 100%
+( 75/138) installing leancrypto                    [###############] 100%
+( 76/138) upgrading gnutls                         [###############] 100%
+( 77/138) upgrading libksba                        [###############] 100%
+( 78/138) upgrading libusb                         [###############] 100%
+( 79/138) upgrading libassuan                      [###############] 100%
+( 80/138) upgrading libsysprof-capture             [###############] 100%
+( 81/138) upgrading glib2                          [###############] 100%
+New optional dependencies for glib2
+    dconf: GSettings storage backend
+    glib2-devel: development tools
+( 82/138) upgrading json-c                         [###############] 100%
+( 83/138) upgrading tpm2-tss                       [###############] 100%
+( 84/138) upgrading libsecret                      [###############] 100%
+( 85/138) upgrading pinentry                       [###############] 100%
+New optional dependencies for pinentry
+    gcr: GNOME backend
+    gtk3: GTK backend
+    kguiaddons: Qt6 backend
+    kwayland5: Qt5 backend
+    kwindowsystem: Qt6 backend
+    qt5-x11extras: Qt5 backend
+( 86/138) upgrading npth                           [###############] 100%
+( 87/138) upgrading gnupg                          [###############] 100%
+( 88/138) upgrading gpgme                          [###############] 100%
+( 89/138) upgrading expat                          [###############] 100%
+( 90/138) installing mpdecimal                     [###############] 100%
+( 91/138) upgrading python                         [###############] 100%
+( 92/138) installing python-gpgme                  [###############] 100%
+( 93/138) upgrading libarchive                     [###############] 100%
+( 94/138) upgrading python-npyscreen               [###############] 100%
+( 95/138) installing python-pytz                   [###############] 100%
+( 96/138) upgrading python-charset-normalizer      [###############] 100%
+( 97/138) upgrading python-idna                    [###############] 100%
+( 98/138) upgrading python-urllib3                 [###############] 100%
+New optional dependencies for python-urllib3
+    python-brotlicffi: Brotli support
+    python-h2: HTTP/2 support
+    python-zstandard: Zstandard support
+( 99/138) upgrading python-requests                [###############] 100%
+(100/138) upgrading pacman-mirrors                 [###############] 100%
+warning: /etc/pacman-mirrors.conf installed as /etc/pacman-mirrors.conf.pacnew
+(101/138) installing device-mapper                 [###############] 100%
+(102/138) installing popt                          [###############] 100%
+(103/138) installing cryptsetup                    [###############] 100%
+(104/138) installing dbus                          [###############] 100%
+(105/138) installing dbus-broker                   [###############] 100%
+(106/138) installing dbus-broker-units             [###############] 100%
+(107/138) installing dbus-units                    [###############] 100%
+(108/138) installing kbd                           [###############] 100%
+(109/138) installing libelf                        [###############] 100%
+(110/138) installing systemd                       [###############] 100%
+warning: directory permissions differ on /var/log/journal/
+filesystem: 755  package: 2755
+Initializing machine ID from container UUID.
+Creating group 'nobody' with GID 65534.
+Creating group 'adm' with GID 999.
+Creating group 'wheel' with GID 998.
+Creating group 'utmp' with GID 997.
+Creating group 'audio' with GID 996.
+Creating group 'disk' with GID 995.
+Creating group 'input' with GID 994.
+Creating group 'kmem' with GID 993.
+Creating group 'kvm' with GID 992.
+Creating group 'lp' with GID 991.
+Creating group 'optical' with GID 990.
+Creating group 'render' with GID 989.
+Creating group 'sgx' with GID 988.
+Creating group 'storage' with GID 987.
+Creating group 'tty' with GID 5.
+Creating group 'uucp' with GID 986.
+Creating group 'video' with GID 985.
+Creating group 'users' with GID 984.
+Creating group 'sys' with GID 3.
+Creating group 'mem' with GID 8.
+Creating group 'ftp' with GID 11.
+Creating group 'mail' with GID 12.
+Creating group 'log' with GID 19.
+Creating group 'smmsp' with GID 25.
+Creating group 'proc' with GID 26.
+Creating group 'games' with GID 50.
+Creating group 'lock' with GID 54.
+Creating group 'network' with GID 90.
+Creating group 'floppy' with GID 94.
+Creating group 'scanner' with GID 96.
+Creating group 'power' with GID 98.
+Creating group 'groups' with GID 983.
+Creating group 'systemd-journal' with GID 982.
+Creating group 'rfkill' with GID 981.
+Creating user 'nobody' (Kernel Overflow User) with UID 65534 and GID 65534.
+Creating group 'dbus' with GID 81.
+Creating user 'dbus' (System Message Bus) with UID 81 and GID 81.
+Creating group 'bin' with GID 1.
+Creating user 'bin' (n/a) with UID 1 and GID 1.
+Creating group 'daemon' with GID 2.
+Creating user 'daemon' (n/a) with UID 2 and GID 2.
+Creating user 'mail' (n/a) with UID 8 and GID 12.
+Creating user 'ftp' (n/a) with UID 14 and GID 11.
+Creating group 'http' with GID 33.
+Creating user 'http' (n/a) with UID 33 and GID 33.
+Creating group 'systemd-coredump' with GID 980.
+Creating user 'systemd-coredump' (systemd Core Dumper) with UID 980 and GID 980.
+Creating group 'systemd-network' with GID 979.
+Creating user 'systemd-network' (systemd Network Management) with UID 979 and GID 979.
+Creating group 'systemd-oom' with GID 978.
+Creating user 'systemd-oom' (systemd Userspace OOM Killer) with UID 978 and GID 978.
+Creating group 'systemd-journal-remote' with GID 977.
+Creating user 'systemd-journal-remote' (systemd Journal Remote) with UID 977 and GID 977.
+Creating group 'systemd-resolve' with GID 976.
+Creating user 'systemd-resolve' (systemd Resolver) with UID 976 and GID 976.
+Creating group 'systemd-timesync' with GID 975.
+Creating user 'systemd-timesync' (systemd Time Synchronization) with UID 975 and GID 975.
+Creating group 'tss' with GID 974.
+Creating user 'tss' (tss user for tpm2) with UID 974 and GID 974.
+Creating group 'uuidd' with GID 973.
+Creating user 'uuidd' (UUID generator helper daemon) with UID 973 and GID 973.
+Created symlink '/etc/systemd/system/getty.target.wants/getty@tty1.service' → '/usr/lib/systemd/system/getty@.service'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/remote-fs.target' → '/usr/lib/systemd/system/remote-fs.target'.
+Created symlink '/etc/systemd/system/sockets.target.wants/systemd-userdbd.socket' → '/usr/lib/systemd/system/systemd-userdbd.socket'.
+:: Append 'init=/usr/lib/systemd/systemd' to your kernel command line in your
+   bootloader to replace sysvinit with systemd, or install systemd-sysvcompat
+Optional dependencies for systemd
+    libmicrohttpd: systemd-journal-gatewayd and systemd-journal-remote
+    quota-tools: kernel-level quota management
+    systemd-sysvcompat: symlink package to provide sysvinit binaries
+    [pending]
+    systemd-ukify: combine kernel and initrd into a signed Unified Kernel
+    Image
+    polkit: allow administration as unprivileged user
+    curl: systemd-journal-upload, machinectl pull-tar and pull-raw
+    [installed]
+    gnutls: systemd-journal-gatewayd and systemd-journal-remote
+    [installed]
+    qrencode: show QR codes
+    iptables: firewall features [pending]
+    libarchive: convert DDIs to tarballs [installed]
+    libbpf: support BPF programs [pending]
+    libpwquality: check password quality
+    libfido2: unlocking LUKS2 volumes with FIDO2 token
+    libp11-kit: support PKCS#11 [installed]
+    tpm2-tss: unlocking LUKS2 volumes with TPM2 [installed]
+(111/138) upgrading pacman                         [###############] 100%
+Removing depreciated SyncFirst line from pacman.conf file ...
+New optional dependencies for pacman
+    base-devel: required to use makepkg
+(112/138) installing archlinux-keyring             [###############] 100%
+gpg: Warning: using insecure memory!
+gpg: WARNING: server 'gpg-agent' is older than us (2.2.41 < 2.4.8)
+gpg: Note: Outdated servers may lack important security fixes.
+gpg: Note: Use the command "gpgconf --kill all" to restart them.
+gpg: problem with fast path key listing: IPC parameter error - ignored
+==> Appending keys from archlinux.gpg...
+gpg: Warning: using insecure memory!
+gpg: WARNING: server 'gpg-agent' is older than us (2.2.41 < 2.4.8)
+gpg: Warning: using insecure memory!
+gpg: WARNING: server 'gpg-agent' is older than us (2.2.41 < 2.4.8)
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: WARNING: server 'gpg-agent' is older than us (2.2.41 < 2.4.8)
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: WARNING: server 'gpg-agent' is older than us (2.2.41 < 2.4.8)
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: WARNING: server 'gpg-agent' is older than us (2.2.41 < 2.4.8)
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: WARNING: server 'gpg-agent' is older than us (2.2.41 < 2.4.8)
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+gpg: Warning: using insecure memory!
+==> Locally signing trusted keys in keyring...
+  -> Locally signed 5 keys.
+==> Importing owner trust values...
+gpg: Warning: using insecure memory!
+gpg: setting ownertrust to 4
+gpg: setting ownertrust to 4
+gpg: setting ownertrust to 4
+gpg: inserting ownertrust of 4
+gpg: setting ownertrust to 4
+==> Disabling revoked keys in keyring...
+  -> Disabled 50 keys.
+==> Updating trust database...
+gpg: Warning: using insecure memory!
+gpg: Note: third-party key signatures using the SHA1 algorithm are rejected
+gpg: (use option "--allow-weak-key-signatures" to override)
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:  28  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: depth: 1  valid:  28  signed:  95  trust: 0-, 0q, 0n, 28m, 0f, 0u
+gpg: depth: 2  valid:  68  signed:  16  trust: 68-, 0q, 0n, 0m, 0f, 0u
+gpg: next trustdb check due at 2026-03-11
+(113/138) installing systemd-sysvcompat            [###############] 100%
+(114/138) installing iputils                       [###############] 100%
+(115/138) installing libmnl                        [###############] 100%
+(116/138) installing libnftnl                      [###############] 100%
+(117/138) installing libnl                         [###############] 100%
+(118/138) installing libpcap                       [###############] 100%
+(119/138) installing libnfnetlink                  [###############] 100%
+(120/138) installing libnetfilter_conntrack        [###############] 100%
+(121/138) installing iptables                      [###############] 100%
+(122/138) installing libbpf                        [###############] 100%
+(123/138) installing iproute2                      [###############] 100%
+Optional dependencies for iproute2
+    db5.3: userspace arp daemon [installed]
+    linux-atm: ATM support
+    python: for routel [installed]
+(124/138) installing base                          [###############] 100%
+Optional dependencies for base
+    linux: bare metal support
+(125/138) installing uboot-tools                   [###############] 100%
+(126/138) installing libjpeg-turbo                 [###############] 100%
+(127/138) installing libpng                        [###############] 100%
+(128/138) installing jbigkit                       [###############] 100%
+(129/138) installing libtiff                       [###############] 100%
+Optional dependencies for libtiff
+    freeglut: for using tiffgt
+(130/138) installing shared-mime-info              [###############] 100%
+(131/138) installing gdk-pixbuf2                   [###############] 100%
+Optional dependencies for gdk-pixbuf2
+    libwmf: Load .wmf and .apm
+    libopenraw: Load .dng, .cr2, .crw, .nef, .orf, .pef, .arw, .erf,
+    .mrw, and .raf
+    libavif: Load .avif
+    libheif: Load .heif, .heic, and .avif
+    libjxl: Load .jxl
+    librsvg: Load .svg, .svgz, and .svg.gz
+    webp-pixbuf-loader: Load .webp
+(132/138) installing libnotify                     [###############] 100%
+(133/138) installing manjaro-system                [###############] 100%
+(134/138) installing lsb-release                   [###############] 100%
+(135/138) installing manjaro-release               [###############] 100%
+(136/138) installing sudo                          [###############] 100%
+warning: directory permissions differ on /etc/sudoers.d/
+filesystem: 755  package: 750
+(137/138) upgrading db5.3                          [###############] 100%
+(138/138) upgrading perl                           [###############] 100%
+:: Running post-transaction hooks...
+==> Installing Raspberry Pi 5 kernel
+[2026-02-02 00:20:20] [INFO] Installing linux-rpi5 kernel
+:: Synchronizing package databases...
+ core is up to date
+ extra is up to date
+error: restricting filesystem access failed because landlock is not supported by the kernel!
+error: error restricting syscalls via seccomp: 22!
+resolving dependencies...
+:: There are 3 providers available for initramfs:
+:: Repository core
+   1) mkinitcpio
+:: Repository extra
+   2) booster  3) dracut
+
+Enter a number (default=1):
+looking for conflicting packages...
+
+Packages (18) abseil-cpp-20250512.1-1  binutils-2.44-1  bpf-6.16-1
+              diffutils-3.12-2  firmware-raspberrypi-20240810-1
+              gtest-1.17.0-1  jansson-2.14.1-1  jq-1.8.1-1
+              libedit-20250104_3.1-1  llvm-libs-20.1.8-1
+              mkinitcpio-39.2-3  mkinitcpio-busybox-1.36.1-1
+              oniguruma-6.9.10-1  pahole-1:1.30-2  protobuf-31.1-2
+              scx-scheds-1.0.13-1  linux-rpi5-6.12.41-1
+              linux-rpi5-headers-6.12.41-1
+
+Total Download Size:   120.33 MiB
+Total Installed Size:  434.43 MiB
+
+:: Proceed with installation? [Y/n]
+:: Retrieving packages...
+ linux-rpi5-6.12....    45.0 MiB  3.41 MiB/s 00:13 [###############] 100%
+ llvm-libs-20.1.8...    31.9 MiB  6.24 MiB/s 00:05 [###############] 100%
+ linux-rpi5-heade...    15.3 MiB  9.69 MiB/s 00:02 [###############] 100%
+ scx-scheds-1.0.1...    11.6 MiB  4.61 MiB/s 00:03 [###############] 100%
+ binutils-2.44-1-...     7.2 MiB  11.5 MiB/s 00:01 [###############] 100%
+ protobuf-31.1-2-...     3.7 MiB  6.14 MiB/s 00:01 [###############] 100%
+ bpf-6.16-1-aarch64   1395.2 KiB  7.70 MiB/s 00:00 [###############] 100%
+ firmware-raspber...  1298.8 KiB  7.33 MiB/s 00:00 [###############] 100%
+ abseil-cpp-20250...  1154.0 KiB  7.04 MiB/s 00:00 [###############] 100%
+ gtest-1.17.0-1-a...   349.0 KiB  3.19 MiB/s 00:00 [###############] 100%
+ diffutils-3.12-2...   320.6 KiB  3.77 MiB/s 00:00 [###############] 100%
+ pahole-1:1.30-2-...   307.0 KiB  3.89 MiB/s 00:00 [###############] 100%
+ mkinitcpio-busyb...   249.4 KiB  3.04 MiB/s 00:00 [###############] 100%
+ oniguruma-6.9.10...   197.2 KiB  2.41 MiB/s 00:00 [###############] 100%
+ jq-1.8.1-1-aarch64    195.3 KiB  2.51 MiB/s 00:00 [###############] 100%
+ libedit-20250104...   104.5 KiB  1413 KiB/s 00:00 [###############] 100%
+ jansson-2.14.1-1...    74.7 KiB  1067 KiB/s 00:00 [###############] 100%
+ mkinitcpio-39.2-...    63.3 KiB  1267 KiB/s 00:00 [###############] 100%
+ Total (18/18)         120.3 MiB  4.69 MiB/s 00:26 [###############] 100%
+error: restricting filesystem access failed because landlock is not supported by the kernel!
+error: error restricting syscalls via seccomp: 22!
+(18/18) checking keys in keyring                   [###############] 100%
+(18/18) checking package integrity                 [###############] 100%
+(18/18) loading package files                      [###############] 100%
+(18/18) checking for file conflicts                [###############] 100%
+(18/18) checking available disk space              [###############] 100%
+:: Processing package changes...
+( 1/18) installing mkinitcpio-busybox              [###############] 100%
+( 2/18) installing jansson                         [###############] 100%
+( 3/18) installing binutils                        [###############] 100%
+Optional dependencies for binutils
+    debuginfod: for debuginfod server/client functionality
+( 4/18) installing diffutils                       [###############] 100%
+( 5/18) installing mkinitcpio                      [###############] 100%
+Optional dependencies for mkinitcpio
+    xz: Use lzma or xz compression for the initramfs image [installed]
+    bzip2: Use bzip2 compression for the initramfs image [installed]
+    lzop: Use lzo compression for the initramfs image
+    lz4: Use lz4 compression for the initramfs image [installed]
+    mkinitcpio-nfs-utils: Support for root filesystem on NFS
+    systemd-ukify: alternative UKI generator
+( 6/18) installing firmware-raspberrypi            [###############] 100%
+( 7/18) installing libedit                         [###############] 100%
+( 8/18) installing llvm-libs                       [###############] 100%
+( 9/18) installing bpf                             [###############] 100%
+(10/18) installing oniguruma                       [###############] 100%
+(11/18) installing jq                              [###############] 100%
+(12/18) installing gtest                           [###############] 100%
+Optional dependencies for gtest
+    python: gmock generator [installed]
+(13/18) installing abseil-cpp                      [###############] 100%
+(14/18) installing protobuf                        [###############] 100%
+(15/18) installing scx-scheds                      [###############] 100%
+(16/18) installing linux-rpi5                      [###############] 100%
+===> Installing default ext4 cmdline.txt /boot...
+===> Installing default config.txt to /boot/...
+
+>>> Sched_ext has been enabled in this kernel.
+    If you want to test it see this link to get started:
+
+    https://forum.manjaro.org/t/raspberry-pi-kernels-2-0/84885/1145
+
+Optional dependencies for linux-rpi5
+    wireless-regdb: Set the correct wireless channels of your country
+    linux-firmware: Extra firmware not provided by RPi or kernel
+(17/18) installing pahole                          [###############] 100%
+Optional dependencies for pahole
+    ostra-cg: Generate call graphs from encoded traces
+(18/18) installing linux-rpi5-headers              [###############] 100%
+:: Running post-transaction hooks...
+(1/6) Reloading system manager configuration...
+  Skipped: Running in chroot.
+(2/6) Creating temporary files...
+(3/6) Arming ConditionNeedsUpdate...
+(4/6) Updating module dependencies...
+(5/6) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux-rpi5.preset: 'default'
+==> Using configuration file: '/etc/mkinitcpio.conf'
+  -> -k 6.12.41-1-MANJARO-RPI5 -c /etc/mkinitcpio.conf -g /boot/initramfs_2712
+==> Starting build: '6.12.41-1-MANJARO-RPI5'
+  -> Running build hook: [base]
