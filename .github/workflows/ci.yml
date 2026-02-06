@@ -28,6 +28,7 @@ jobs:
 
       - name: Verify installer is executable
         run: |
+          chmod +x manjaro-pi5-installer-v3.0.sh
           test -x manjaro-pi5-installer-v3.0.sh || exit 1
           echo "✓ Main installer is executable"
 
