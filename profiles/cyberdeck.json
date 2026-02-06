@@ -1,0 +1,76 @@
+{
+  "name": "cyberdeck",
+  "description": "Portable cyberdeck configuration with offline capabilities",
+  "version": "1.0",
+  "base_packages": [
+    "base",
+    "base-devel",
+    "wget",
+    "curl",
+    "git",
+    "nano",
+    "vim",
+    "htop",
+    "neofetch",
+    "networkmanager",
+    "tmux",
+    "screen"
+  ],
+  "edition_packages": [
+    "xorg-server",
+    "i3-wm",
+    "i3status",
+    "i3lock",
+    "dmenu",
+    "rxvt-unicode",
+    "feh",
+    "ranger",
+    "w3m",
+    "lynx",
+    "cmus",
+    "mpv",
+    "gparted",
+    "wireshark-cli",
+    "nmap",
+    "tcpdump",
+    "aircrack-ng",
+    "python",
+    "python-pip",
+    "nodejs",
+    "npm",
+    "gcc",
+    "make",
+    "cmake"
+  ],
+  "services": {
+    "enable": [
+      "NetworkManager",
+      "sshd"
+    ],
+    "disable": []
+  },
+  "display_manager": null,
+  "optimizations": [
+    "zram",
+    "sysctl",
+    "cpupower",
+    "gpu-mem",
+    "journald"
+  ],
+  "config": {
+    "gpu_mem": 64,
+    "enable_i2c": true,
+    "enable_spi": true,
+    "enable_uart": true,
+    "disable_bt": false
+  },
+  "features": {
+    "gui": true,
+    "development": true,
+    "multimedia": true,
+    "gaming": false,
+    "cyberdeck": true,
+    "offline_capable": true,
+    "hacking_tools": true
+  }
+}

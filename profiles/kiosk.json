@@ -1,0 +1,50 @@
+{
+  "name": "kiosk",
+  "description": "Single-purpose kiosk mode with locked-down configuration",
+  "version": "1.0",
+  "base_packages": [
+    "base",
+    "networkmanager"
+  ],
+  "edition_packages": [
+    "xorg-server",
+    "openbox",
+    "chromium",
+    "unclutter",
+    "xdotool"
+  ],
+  "services": {
+    "enable": [
+      "NetworkManager"
+    ],
+    "disable": [
+      "sshd"
+    ]
+  },
+  "display_manager": null,
+  "optimizations": [
+    "zram",
+    "sysctl",
+    "gpu-mem",
+    "journald"
+  ],
+  "config": {
+    "gpu_mem": 128,
+    "enable_i2c": false,
+    "enable_spi": false,
+    "enable_uart": false,
+    "disable_bt": true,
+    "kiosk_url": "https://example.com",
+    "auto_login": true,
+    "disable_screensaver": true,
+    "fullscreen": true
+  },
+  "features": {
+    "gui": true,
+    "development": false,
+    "multimedia": false,
+    "gaming": false,
+    "kiosk": true,
+    "locked_down": true
+  }
+}

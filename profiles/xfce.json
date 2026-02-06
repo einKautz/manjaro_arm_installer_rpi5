@@ -1,0 +1,62 @@
+{
+  "name": "xfce",
+  "description": "Xfce desktop environment",
+  "version": "1.0",
+  "base_packages": [
+    "base",
+    "base-devel",
+    "wget",
+    "curl",
+    "git",
+    "nano",
+    "vim",
+    "htop",
+    "neofetch",
+    "networkmanager"
+  ],
+  "edition_packages": [
+    "xorg-server",
+    "xfce4",
+    "xfce4-goodies",
+    "lightdm",
+    "lightdm-gtk-greeter",
+    "firefox",
+    "thunar-archive-plugin",
+    "file-roller",
+    "xfce4-pulseaudio-plugin",
+    "pavucontrol",
+    "gvfs",
+    "gvfs-mtp",
+    "tumbler",
+    "ffmpegthumbnailer"
+  ],
+  "services": {
+    "enable": [
+      "NetworkManager",
+      "lightdm"
+    ],
+    "disable": []
+  },
+  "display_manager": "lightdm",
+  "optimizations": [
+    "zram",
+    "sysctl",
+    "fstrim",
+    "cpupower",
+    "gpu-mem",
+    "journald"
+  ],
+  "config": {
+    "gpu_mem": 128,
+    "enable_i2c": false,
+    "enable_spi": false,
+    "enable_uart": false,
+    "disable_bt": false
+  },
+  "features": {
+    "gui": true,
+    "development": true,
+    "multimedia": true,
+    "gaming": false
+  }
+}

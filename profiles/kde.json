@@ -1,0 +1,61 @@
+{
+  "name": "kde",
+  "description": "KDE Plasma desktop environment",
+  "version": "1.0",
+  "base_packages": [
+    "base",
+    "base-devel",
+    "wget",
+    "curl",
+    "git",
+    "nano",
+    "vim",
+    "htop",
+    "neofetch",
+    "networkmanager"
+  ],
+  "edition_packages": [
+    "xorg-server",
+    "plasma-desktop",
+    "plasma-nm",
+    "plasma-pa",
+    "konsole",
+    "dolphin",
+    "kate",
+    "sddm",
+    "firefox",
+    "ark",
+    "gwenview",
+    "okular",
+    "spectacle"
+  ],
+  "services": {
+    "enable": [
+      "NetworkManager",
+      "sddm"
+    ],
+    "disable": []
+  },
+  "display_manager": "sddm",
+  "optimizations": [
+    "zram",
+    "sysctl",
+    "fstrim",
+    "cpupower",
+    "gpu-mem",
+    "journald"
+  ],
+  "config": {
+    "gpu_mem": 128,
+    "enable_i2c": false,
+    "enable_spi": false,
+    "enable_uart": false,
+    "disable_bt": false
+  },
+  "features": {
+    "gui": true,
+    "development": true,
+    "multimedia": true,
+    "gaming": false
+  }
+}

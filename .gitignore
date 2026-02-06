@@ -1,0 +1,33 @@
+# Build artifacts
+*.o
+*.so
+*.a
+
+# Logs
+*.log
+install_logs/*.txt
+!install_logs/.gitkeep
+
+# Temporary files
+*.tmp
+*.swp
+*~
+.DS_Store
+
+# IDE/Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Test artifacts
+test_*.sh
+!test_integration.sh
+!test_hal_profiles.sh
+
+# Sensitive data
+*.key
+*.pem
+*.crt
+
+# OS specific
+Thumbs.db

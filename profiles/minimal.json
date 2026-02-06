@@ -1,0 +1,45 @@
+{
+  "name": "minimal",
+  "description": "Minimal headless system",
+  "version": "1.0",
+  "base_packages": [
+    "base",
+    "base-devel",
+    "wget",
+    "curl",
+    "git",
+    "nano",
+    "vim",
+    "htop",
+    "neofetch",
+    "networkmanager"
+  ],
+  "edition_packages": [],
+  "services": {
+    "enable": [
+      "NetworkManager",
+      "sshd"
+    ],
+    "disable": []
+  },
+  "display_manager": null,
+  "optimizations": [
+    "zram",
+    "sysctl",
+    "journald",
+    "gpu-mem"
+  ],
+  "config": {
+    "gpu_mem": 16,
+    "enable_i2c": false,
+    "enable_spi": false,
+    "enable_uart": false,
+    "disable_bt": false
+  },
+  "features": {
+    "gui": false,
+    "development": true,
+    "multimedia": false,
+    "gaming": false
+  }
+}
