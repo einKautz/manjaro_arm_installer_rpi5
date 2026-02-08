@@ -17,26 +17,25 @@ This is a Bash-based installer for Manjaro ARM on Raspberry Pi 5, featuring a mo
 ```
 .
 ├── manjaro-pi5-installer-v3.0.sh  # Main installer (v3.0 - plugin-based)
-├── lib/                           # Core libraries
-│   ├── log.sh                     # Logging utilities
-│   ├── plugins.sh                 # Plugin system loader
-│   ├── profiles.sh                # Profile management
-│   └── diagnostics.sh             # System diagnostics
-├── plugins/                       # Modular plugins (see plugins/README.md)
-│   ├── boot/                      # Boot configuration plugins
-│   ├── network/                   # Network management plugins
-│   ├── hw/                        # Hardware detection plugins
-│   ├── diagnostics/               # Diagnostic plugins
-│   ├── post-install/              # Post-installation optimizations
-│   ├── config/                    # Configuration plugins
-│   ├── security/                  # Security hardening plugins
-│   └── workflow/                  # Workflow automation plugins
-├── hal/                           # Hardware Abstraction Layer
-├── profiles/                      # Edition-specific profiles
-├── scripts/                       # Utility scripts
-├── test/                          # Test suite (bats)
-└── docs/                          # Documentation
-
+├── lib/                            # Core libraries
+│   ├── log.sh                      # Logging utilities
+│   ├── plugins.sh                  # Plugin system loader
+│   ├── profiles.sh                 # Profile management
+│   └── diagnostics.sh              # System diagnostics
+├── plugins/                        # Modular plugins (see plugins/README.md)
+│   ├── boot/                       # Boot configuration plugins
+│   ├── network/                    # Network management plugins
+│   ├── hw/                         # Hardware detection plugins
+│   ├── diagnostics/                # Diagnostic plugins
+│   ├── post-install/               # Post-installation optimizations
+│   ├── config/                     # Configuration plugins
+│   ├── security/                   # Security hardening plugins
+│   └── workflow/                   # Workflow automation plugins
+├── hal/                            # Hardware Abstraction Layer
+├── profiles/                       # Edition-specific profiles
+├── scripts/                        # Utility scripts
+├── test/                           # Test suite (bats)
+└── docs/                           # Documentation
 ```
 
 ## Shell Scripting Standards
@@ -284,10 +283,12 @@ plugin_load "pi5-boot"
 
 ## Documentation
 
-### README Files
-- Main: `README.md` (if exists)
-- Plugins: `plugins/README.md`
-- Update when adding new features/plugins
+### Documentation Files
+- **Architecture:** `docs/ARCHITECTURE.md` - System architecture and design patterns
+- **Copilot Guide:** `docs/COPILOT_GUIDE.md` - AI autocomplete patterns
+- **Quick Reference:** `docs/QUICK_REFERENCE.md` - Common commands and workflows
+- **Plugin Documentation:** `plugins/README.md` - Complete plugin system guide
+- Update documentation when adding new features or plugins
 
 ### Code Comments
 - Explain **why**, not **what** (code shows what)
