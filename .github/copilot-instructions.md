@@ -1,5 +1,7 @@
 # Manjaro ARM Pi 5 Installer - Copilot Instructions
 
+> **Note:** This file provides repository-wide Copilot coding agent instructions. For detailed patterns and examples, also see `docs/COPILOT_GUIDE.md` and `docs/ARCHITECTURE.md`.
+
 ## Project Overview
 
 This is a Bash-based installer for Manjaro ARM on Raspberry Pi 5, featuring a modular plugin architecture. The project has evolved from a monolithic script to a well-organized, plugin-driven system.
@@ -344,11 +346,14 @@ Install dev dependencies: `make install-deps` (requires sudo)
 
 ## Resources
 
-- Plugin Documentation: `plugins/README.md`
-- ShellCheck Config: `.shellcheckrc`
-- Makefile Targets: `make help`
-- Test Suite: `test/` directory
-- Recent Changes: Git log and `*_PROGRESS.md` files
+- **Plugin Documentation:** `plugins/README.md` - Complete plugin system guide
+- **Architecture:** `docs/ARCHITECTURE.md` - System architecture and design
+- **Copilot Integration:** `docs/COPILOT_GUIDE.md` - AI autocomplete patterns and examples
+- **Quick Reference:** `docs/QUICK_REFERENCE.md` - Common commands and patterns
+- **ShellCheck Config:** `.shellcheckrc` - Linting rules
+- **Makefile Targets:** `make help` - Available build commands
+- **Test Suite:** `test/` directory - Test files
+- **Recent Changes:** Git log and `*_PROGRESS.md` files
 
 ---
 
